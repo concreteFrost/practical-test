@@ -1,25 +1,28 @@
 <template>
-<div class="r">
-    <p>
-       Try me again!
-    </p>
-    <button v-on:click="hello">Click</button>
-</div>
+    <div class="container">
+        <div>
+            <Navbar></Navbar>
+            <Home></Home>
+        </div>
+    </div>
 </template>
 
 <script>
-export default{
-    name:'App',
-    methods:{
-        hello(){
-            console.log('done')
-        }
-    }
-}
+export default {
+    components: {
+        Navbar,
+        Home,
+    },
+    name: "App",
+    data() {
+        return {};
+    },
+};
+
+import Navbar from "../Navbar/Navbar.vue";
+import Home from "../Home/Home.vue";
 </script>
 
 <style>
-    .r{
-        background-color: red;
-    }
+@import "./App.css";
 </style>

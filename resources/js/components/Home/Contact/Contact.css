@@ -1,0 +1,29 @@
+.contact{
+    grid-area: contact;
+    padding-left: 79px;
+    
+}
+
+.contact .address{
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.contact li{
+    list-style: none;
+    
+}
+
+.contact .icon{
+    color: rgb(2, 131, 255);
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 735px) {
+    .contact .address{
+        margin-left: 0px;
+    
+    }
+}

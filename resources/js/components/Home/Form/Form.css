@@ -1,0 +1,56 @@
+.message-form {
+    grid-area: form;
+
+    display: grid;
+    grid-template-areas:
+        "n e"
+        "t t";
+    grid-auto-columns: max-content;
+}
+
+.full-name-field {
+    grid-area: n;
+    margin-left: 4px;
+}
+
+.full-name-field input {
+    width: 80%;
+}
+
+.email-field {
+    grid-area: e;
+}
+
+.message-field {
+    grid-area: t;
+}
+
+.message-field textarea {
+    margin-top: 10px;
+    resize: none;
+    width: 410px;
+    border: 1px solid rgb(223, 221, 221);
+}
+
+.send-message-button {
+    background-color: rgb(31, 131, 255);
+    border-radius: 3px;
+    border: 0;
+    color: white;
+}
+p {
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+
+::placeholder{
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+}
+
+span {
+    color: rgb(2, 131, 255);
+}
+
+@media screen and (max-width: 735px) {
+}

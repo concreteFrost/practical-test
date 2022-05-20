@@ -1,4 +1,4 @@
-require('./bootstrap');
+
 import router from './routes.js'
 
 window.Vue = require('vue').default;
