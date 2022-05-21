@@ -1,6 +1,8 @@
 .message-form {
     grid-area: form;
+}
 
+.message-form form {
     display: grid;
     grid-template-areas:
         "n e"
@@ -19,6 +21,10 @@
 }
 
 .full-name-field input {
+    width: 80%;
+}
+
+.email-field input {
     width: 80%;
 }
 
@@ -58,19 +64,29 @@ span {
     color: rgb(2, 131, 255);
 }
 
+.sent {
+    color: red;
+    font-weight: bold;
+    
+    grid-area: t ;
+}
+
 @media screen and (max-width: 735px) {
+    .message-form form {
+        margin-left: 0;
+    }
     .message-field textarea {
         width: 230px;
     }
 
     .send-message-button {
-      float: right;
+        float: right;
     }
     .full-name-field input {
         width: 90%;
     }
 
-    .email-field input{
+    .email-field input {
         width: 90%;
     }
 }
