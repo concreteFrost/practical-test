@@ -2140,8 +2140,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Buy"
+  name: "Buy",
+  data: function data() {
+    return {
+      converted: null
+    };
+  }
 });
 
 /***/ }),
@@ -4278,73 +4288,86 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "buy" }, [
+    _c("form", { staticClass: "send-form" }, [
+      _c("label", { staticClass: "send", attrs: { for: "send" } }, [
+        _vm._v("Send"),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "usd" }, [
+        _c("input", {
+          attrs: {
+            type: "text",
+            name: "send",
+            id: "send",
+            value: "USD",
+            readonly: "",
+          },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.converted,
+              expression: "converted",
+            },
+          ],
+          attrs: { type: "text", id: "usd", name: "usd", placeholder: "0 USD" },
+          domProps: { value: _vm.converted },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.converted = $event.target.value
+            },
+          },
+        }),
+      ]),
+      _vm._v(" "),
+      _c("label", { attrs: { for: "receive" } }, [_vm._v("Receive")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "btc" }, [
+        _c("input", {
+          attrs: {
+            type: "text",
+            name: "receive",
+            d: "receive",
+            value: "BTC",
+            readonly: "",
+          },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          attrs: {
+            type: "text",
+            id: "btc",
+            name: "btc",
+            placeholder: _vm.converted * 0.000088 + " BTC",
+            readonly: "",
+          },
+        }),
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("button", { staticClass: "buy-button" }, [_vm._v("Buy Now")]),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "buy" }, [
-      _c("form", { staticClass: "send-form" }, [
-        _c("label", { staticClass: "send", attrs: { for: "send" } }, [
-          _vm._v("Send"),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "usd" }, [
-          _c("input", {
-            attrs: {
-              type: "text",
-              name: "send",
-              id: "send",
-              value: "USD",
-              readonly: "",
-            },
-          }),
-          _vm._v(" "),
-          _c("input", {
-            attrs: {
-              type: "text",
-              id: "usd",
-              name: "usd",
-              placeholder: "0.0214 BTC",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "receive" } }, [_vm._v("Receive")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "btc" }, [
-          _c("input", {
-            attrs: {
-              type: "text",
-              name: "receive",
-              d: "receive",
-              value: "BTC",
-              readonly: "",
-            },
-          }),
-          _vm._v(" "),
-          _c("input", {
-            attrs: {
-              type: "text",
-              id: "btc",
-              name: "btc",
-              placeholder: "0.0214 BTC",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("\n            1 USD ~ 0.000088 BTC\n            "),
-          _c("span", [
-            _vm._v("Expected rate "),
-            _c("br"),
-            _vm._v("\n                No extra fees"),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("button", { staticClass: "buy-button" }, [_vm._v("Buy Now")]),
+    return _c("p", [
+      _vm._v("\n            1 USD ~ 0.000088 BTC\n            "),
+      _c("span", [
+        _vm._v("Expected rate "),
+        _c("br"),
+        _vm._v("\n                No extra fees"),
       ]),
     ])
   },
@@ -4650,7 +4673,7 @@ var staticRenderFns = [
       _c("form", [
         _c("input", {
           staticClass: "subscribe-form",
-          attrs: { type: "email", value: "Subscribe Now" },
+          attrs: { type: "email", placeholder: "Subscribe Now" },
         }),
         _vm._v(" "),
         _c("button", [
