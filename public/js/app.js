@@ -540,7 +540,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_fonts_Dongle_Light_ttf__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".container {\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    max-width: 850px;\r\n}\r\n\r\n@font-face {\r\n    font-family: Dongle;\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n\r\n* {\r\n    font-family: Dongle;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".container {\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    max-width: 850px;\r\n}\r\n\r\n@font-face {\r\n    font-family: Dongle;\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n\r\n* {\r\n    font-family: Dongle, sans-serif;\r\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -586,7 +586,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contact{\r\n    grid-area: contact;\r\n    padding-left: 79px;\r\n    \r\n}\r\n\r\n.contact .address{\r\n    margin-left: 40px;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.contact li{\r\n    list-style: none;\r\n    \r\n}\r\n\r\n.contact .icon{\r\n    color: rgb(2, 131, 255);\r\n    margin-right: 10px;\r\n    font-size: 0.8em;\r\n}\r\n\r\n\r\n@media screen and (max-width: 735px) {\r\n    .contact .address{\r\n        margin-left: 0px;\r\n    \r\n    }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contact{\r\n    grid-area: contact;\r\n    padding-left: 79px;\r\n     \r\n}\r\n\r\n.contact .address{\r\n    color: rgb(29, 46, 80);\r\n    margin-left: 40px;\r\n    margin-bottom: 0px;\r\n    margin-top: 5px;\r\n}\r\n\r\n.contact li{\r\n    list-style: none;\r\n    \r\n}\r\n\r\n.contact .icon{\r\n    color: rgb(2, 131, 255);\r\n    margin-right: 10px;\r\n    font-size: 0.8em;\r\n}\r\n\r\n\r\n@media screen and (max-width: 735px) {\r\n  .contact{padding-left: 0;}\r\n\r\n  .contact ul{\r\n      padding-left: 0;\r\n      \r\n  }\r\n\r\n  .contact li{\r\n      display: inline;\r\n      margin-right: 30px;\r\n  }\r\n\r\n  .contact .address{\r\n   margin-top: 40px;\r\n    margin-left: 0px;\r\n    text-align: center;\r\n   \r\n}\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -609,7 +609,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".message-form {\r\n    grid-area: form;\r\n\r\n    display: grid;\r\n    grid-template-areas:\r\n        \"n e\"\r\n        \"t t\";\r\n    grid-auto-columns: max-content;\r\n}\r\n\r\n.full-name-field {\r\n    grid-area: n;\r\n    margin-left: 4px;\r\n}\r\n\r\n.full-name-field input {\r\n    width: 80%;\r\n}\r\n\r\n.email-field {\r\n    grid-area: e;\r\n}\r\n\r\n.message-field {\r\n    grid-area: t;\r\n}\r\n\r\n.message-field textarea {\r\n    margin-top: 10px;\r\n    resize: none;\r\n    width: 410px;\r\n    border: 1px solid rgb(223, 221, 221);\r\n}\r\n\r\n.send-message-button {\r\n    background-color: rgb(31, 131, 255);\r\n    border-radius: 3px;\r\n    border: 0;\r\n    color: white;\r\n}\r\np {\r\n    line-height: 10px;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n::placeholder{\r\n    color: rgb(56, 56, 56);\r\n    font-weight: 500;\r\n}\r\n\r\nspan {\r\n    color: rgb(2, 131, 255);\r\n}\r\n\r\n@media screen and (max-width: 735px) {\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".message-form {\r\n    grid-area: form;\r\n\r\n    display: grid;\r\n    grid-template-areas:\r\n        \"n e\"\r\n        \"t t\";\r\n    grid-auto-columns: max-content;\r\n}\r\n\r\n.message-form .title {\r\n    font-weight: 600;\r\n    color: rgb(104, 118, 130);\r\n}\r\n\r\n.full-name-field {\r\n    grid-area: n;\r\n    margin-left: 4px;\r\n}\r\n\r\n.full-name-field input {\r\n    width: 80%;\r\n}\r\n\r\n.email-field {\r\n    grid-area: e;\r\n}\r\n\r\n.message-field {\r\n    grid-area: t;\r\n}\r\n\r\n.message-field textarea {\r\n    margin-top: 10px;\r\n    resize: none;\r\n    width: 410px;\r\n    border: 1px solid rgb(223, 221, 221);\r\n}\r\n\r\n.send-message-button {\r\n    background-color: rgb(31, 131, 255);\r\n    border-radius: 3px;\r\n    border: 0;\r\n    color: white;\r\n    width: 100px;\r\n}\r\np {\r\n    line-height: 10px;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n::placeholder {\r\n    color: rgb(56, 56, 56);\r\n    font-size: medium;\r\n}\r\n\r\nspan {\r\n    color: rgb(2, 131, 255);\r\n}\r\n\r\n@media screen and (max-width: 735px) {\r\n    .message-field textarea {\r\n        width: 230px;\r\n    }\r\n\r\n    .send-message-button {\r\n      float: right;\r\n    }\r\n    .full-name-field input {\r\n        width: 90%;\r\n    }\r\n\r\n    .email-field input{\r\n        width: 90%;\r\n    }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -632,7 +632,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".home-top {\r\n    display: grid;\r\n    grid-template-areas: \"subscribe buy\";\r\n    padding-bottom: 50px;\r\n    background-color: rgb(29, 46, 80);\r\n}\r\n\r\n.home-middle {\r\n    margin-top: 45px;\r\n    text-align: center;\r\n}\r\n.home-middle p {\r\n    margin: 0;\r\n    opacity: 0.8;\r\n    line-height: 0;\r\n}\r\n.home-middle h2 {\r\n    margin-top: 0;\r\n    padding-top: 0;\r\n    padding-top: 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.home-bottom{\r\n    display: grid;\r\n    grid-template-areas: \"contact form form\";\r\n    grid-template-columns: 5fr 4fr 4fr;\r\n}\r\n\r\n\r\n@media screen and (max-width: 735px) {\r\n    .home-top {\r\n        grid-template-areas:\r\n            \"subscribe\"\r\n            \"buy\";\r\n\r\n        align-items: center;\r\n        justify-items: center;\r\n        padding: 0;\r\n    }\r\n    .home-bottom{\r\n        grid-template-areas:\r\n        \"contact\"\r\n        \"form\";\r\n\r\n        text-align: center;\r\n    }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".home-top {\r\n    display: grid;\r\n    grid-template-areas: \"subscribe buy\";\r\n    padding-bottom: 50px;\r\n    background-color: rgb(29, 46, 80);\r\n}\r\n\r\n.home-middle {\r\n    margin-top: 45px;\r\n    text-align: center;\r\n}\r\n.home-middle p {\r\n    margin: 0;\r\n    opacity: 0.8;\r\n    line-height: 0;\r\n}\r\n.home-middle h2 {\r\n    margin-top: 0;\r\n    padding-top: 0;\r\n    padding-top: 0;\r\n    font-weight: bold;\r\n}\r\n\r\n.title{\r\n    color: rgb(29, 46, 80);\r\n}\r\n.home-bottom{\r\n    display: grid;\r\n    grid-template-areas: \"contact form form\";\r\n    grid-template-columns: 5fr 4fr 4fr;\r\n}\r\n\r\n\r\n@media screen and (max-width: 735px) {\r\n    .home-top {\r\n        grid-template-areas:\r\n            \"subscribe\"\r\n            \"buy\";\r\n\r\n        align-items: center;\r\n        justify-items: center;\r\n        padding: 0;\r\n    }\r\n\r\n    .home-bottom{\r\n        grid-template-areas: \"form\"\r\n        \"contact\";\r\n        justify-items: center;\r\n        grid-template-columns: 1fr;\r\n    }\r\n\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -678,7 +678,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav {\r\n    padding-top: 2px;\r\n    background-color: rgb(29, 46, 80);\r\n    padding-bottom: 50px;\r\n    padding-right: 100px;\r\n}\r\n\r\n.nav ul {\r\n    text-align: right;\r\n}\r\n\r\n.nav li {\r\n    margin-right: 10px;\r\n    display: inline;\r\n    list-style: none;\r\n}\r\n\r\n.nav a {\r\n    color: rgb(255, 255, 255);\r\n    text-decoration: none;\r\n}\r\n\r\n.sign-in-btn {\r\n    border: 0.2px solid rgb(39, 124, 244);\r\n    border-radius: 3px;\r\n    padding: 0 8px;\r\n    line-height: 22px;\r\n}\r\n\r\n.sign-in-btn:hover {\r\n    background-color: rgb(0, 157, 255);\r\n}\r\n\r\n@media screen and (max-width: 735px) {\r\n    .nav {\r\n        padding-right: 0;\r\n       padding-bottom: 20px;\r\n    }\r\n\r\n    ul {\r\n        text-align: center;\r\n        padding-inline-start: 0;\r\n    }\r\n\r\n    .nav li {\r\n        display: block;\r\n        margin-right: 0;\r\n    }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav {\r\n    padding-top: 2px;\r\n    background-color: rgb(29, 46, 80);\r\n    padding-bottom: 50px;\r\n    padding-right: 100px;\r\n}\r\n\r\n.nav ul {\r\n    text-align: right;\r\n}\r\n\r\n.nav li {\r\n    margin-right: 10px;\r\n    display: inline;\r\n    list-style: none;\r\n}\r\n\r\n.nav a {\r\n    color: rgb(255, 255, 255);\r\n    text-decoration: none;\r\n}\r\n\r\n.sign-in-btn {\r\n    border: 0.2px solid rgb(39, 124, 244);\r\n    border-radius: 3px;\r\n    padding: 0 8px;\r\n    line-height: 22px;\r\n}\r\n\r\n.sign-in-btn:hover {\r\n    background-color: rgb(0, 157, 255);\r\n}\r\n\r\n@media screen and (max-width: 735px) {\r\n    .nav {\r\n        padding-right: 0;\r\n       padding-bottom: 20px;\r\n    }\r\n\r\n    .nav ul {\r\n        text-align: center;\r\n        padding-inline-start: 0;\r\n    }\r\n\r\n    .nav li {\r\n        display: block;\r\n        margin-right: 0;\r\n    }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2069,7 +2069,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("form", { staticClass: "message-form" }, [
       _c("div", { staticClass: "full-name-field" }, [
-        _c("label", { attrs: { for: "full-name" } }, [_vm._v("Full Name")]),
+        _c("label", { attrs: { for: "full-name" } }, [
+          _c("span", { staticClass: "title" }, [_vm._v("Full Name")]),
+        ]),
         _vm._v(" "),
         _c("input", {
           attrs: {
@@ -2082,7 +2084,9 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "email-field" }, [
-        _c("label", { attrs: { for: "email" } }, [_vm._v("Email")]),
+        _c("label", { attrs: { for: "email" } }, [
+          _c("span", { staticClass: "title" }, [_vm._v(" Email")]),
+        ]),
         _vm._v(" "),
         _c("input", {
           attrs: {
@@ -2157,7 +2161,11 @@ var staticRenderFns = [
     return _c("div", { staticClass: "home-middle" }, [
       _c("p", [_vm._v("Ask Question")]),
       _vm._v(" "),
-      _c("h2", [_vm._v("Let us hear from you directly!")]),
+      _c("h2", [
+        _c("span", { staticClass: "title" }, [
+          _vm._v("Let us hear from you directly!"),
+        ]),
+      ]),
     ])
   },
 ]

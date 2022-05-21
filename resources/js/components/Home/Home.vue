@@ -6,7 +6,7 @@
         </div>
         <div class="home-middle">
             <p>Ask Question</p>
-            <h2>Let us hear from you directly!</h2>
+            <h2><span class="title">Let us hear from you directly!</span></h2>
         </div>
         <div class="home-bottom">
             <Contact></Contact>

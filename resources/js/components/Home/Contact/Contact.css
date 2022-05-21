@@ -1,12 +1,14 @@
 .contact{
     grid-area: contact;
     padding-left: 79px;
-    
+     
 }
 
 .contact .address{
+    color: rgb(29, 46, 80);
     margin-left: 40px;
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 .contact li{
@@ -22,8 +24,22 @@
 
 
 @media screen and (max-width: 735px) {
-    .contact .address{
-        margin-left: 0px;
-    
-    }
+  .contact{padding-left: 0;}
+
+  .contact ul{
+      padding-left: 0;
+      
+  }
+
+  .contact li{
+      display: inline;
+      margin-right: 30px;
+  }
+
+  .contact .address{
+   margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+   
+}
 }

@@ -21,6 +21,9 @@
     font-weight: bold;
 }
 
+.title{
+    color: rgb(29, 46, 80);
+}
 .home-bottom{
     display: grid;
     grid-template-areas: "contact form form";
@@ -38,11 +41,12 @@
         justify-items: center;
         padding: 0;
     }
-    .home-bottom{
-        grid-template-areas:
-        "contact"
-        "form";
 
-        text-align: center;
+    .home-bottom{
+        grid-template-areas: "form"
+        "contact";
+        justify-items: center;
+        grid-template-columns: 1fr;
     }
+
 }

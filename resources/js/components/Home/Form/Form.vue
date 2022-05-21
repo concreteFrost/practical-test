@@ -1,7 +1,7 @@
 <template>
     <form class="message-form">
         <div class="full-name-field">
-            <label for="full-name">Full Name</label>
+            <label for="full-name"><span class="title">Full Name</span> </label>
             <input
                 type="text"
                 name="full-name"
@@ -10,7 +10,7 @@
             />
         </div>
         <div class="email-field">
-            <label for="email">Email</label>
+            <label for="email"><span class="title"> Email</span></label>
             <input type="email" name="email" id="email" placeholder="email" />
         </div>
         <div class="message-field">

@@ -8,6 +8,11 @@
     grid-auto-columns: max-content;
 }
 
+.message-form .title {
+    font-weight: 600;
+    color: rgb(104, 118, 130);
+}
+
 .full-name-field {
     grid-area: n;
     margin-left: 4px;
@@ -37,15 +42,16 @@
     border-radius: 3px;
     border: 0;
     color: white;
+    width: 100px;
 }
 p {
     line-height: 10px;
     margin-bottom: 5px;
 }
 
-::placeholder{
+::placeholder {
     color: rgb(56, 56, 56);
-    font-weight: 500;
+    font-size: medium;
 }
 
 span {
@@ -53,4 +59,18 @@ span {
 }
 
 @media screen and (max-width: 735px) {
+    .message-field textarea {
+        width: 230px;
+    }
+
+    .send-message-button {
+      float: right;
+    }
+    .full-name-field input {
+        width: 90%;
+    }
+
+    .email-field input{
+        width: 90%;
+    }
 }
